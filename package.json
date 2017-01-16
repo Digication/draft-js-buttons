@@ -22,13 +22,14 @@
     "react-component"
   ],
   "scripts": {
-    "build": "BABEL_ENV=production ../node_modules/.bin/babel --out-dir='lib' --ignore='__tests__/*' src",
+    "build": "BABEL_ENV=production babel --out-dir='lib' --ignore='__tests__/*' src",
     "prepublish": "npm run build"
   },
   "license": "MIT",
   "dependencies": {
-    "union-class-names": "^1.0.0",
-    "draft-js": ">=0.9.1"
+    "babel-preset-stage-0": "^6.16.0",
+    "draft-js": ">=0.9.1",
+    "union-class-names": "^1.0.0"
   },
   "peerDependencies": {
     "react": "^15.0.0",
