@@ -2,9 +2,9 @@ import React from 'react';
 import createBlockStyleButton from '../../utils/createBlockStyleButton';
 
 export default createBlockStyleButton({
-  blockType: 'header-one',
+  blockType: 'unstyled',
   customClass: 'textButton',
   children: (
-    <span>HEADING</span>
+    <span>PARAGRAPH</span>
   ),
 });

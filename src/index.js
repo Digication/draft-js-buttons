@@ -16,6 +16,7 @@ import AlignBlockCenterButton from './components/AlignBlockCenterButton';
 import AlignBlockLeftButton from './components/AlignBlockLeftButton';
 import AlignBlockRightButton from './components/AlignBlockRightButton';
 import AddLinkButton from './components/AddLinkButton';
+import ParagraphButton from './components/ParagraphButton';
 
 export {
   createBlockStyleButton,
@@ -36,4 +37,5 @@ export {
   AlignBlockLeftButton,
   AlignBlockRightButton,
   AddLinkButton,
+  ParagraphButton,
 };

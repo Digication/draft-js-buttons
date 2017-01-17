@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { RichUtils } from 'draft-js';
 import unionClassNames from 'union-class-names';
 
-export default ({ blockType, children }) => (
+export default ({ blockType, children, customClass }) => (
   class BlockStyleButton extends Component {
 
     toggleStyle = (event) => {
@@ -28,7 +28,8 @@ export default ({ blockType, children }) => (
 
     render() {
       const { theme } = this.props;
-      const className = this.blockTypeIsActive() ? unionClassNames(theme.button, theme.active) : theme.button;
+      const buttonClass = customClass ? unionClassNames(theme.button, customClass) : theme.button;
+      const className = this.blockTypeIsActive() ? unionClassNames(buttonClass, theme.active) : buttonClass;
       return (
         <div
           className={theme.buttonWrapper}
